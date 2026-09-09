@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/header_bg" android:gravity="center_vertical" android:padding="14dp">
+<TextView android:layout_width="50dp" android:layout_height="50dp" android:gravity="center" android:text="⚡" android:textColor="#FFFFFF" android:textSize="26sp"/>
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingStart="12dp">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Электричество" android:textColor="#FFFFFF" android:textSize="22sp" android:textStyle="bold"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Калькулятор • v2.1" android:textColor="#DCEBFF" android:textSize="13sp"/>
+</LinearLayout></LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Тарифы" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="18dp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/card_bg" android:orientation="vertical" android:layout_marginTop="8dp">
+<EditText android:id="@+id/etRateDay" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="☀️  День — грн/кВт⋅ч" android:inputType="numberDecimal"/>
+<EditText android:id="@+id/etRateNight" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="🌙  Ночь — грн/кВт⋅ч" android:inputType="numberDecimal"/>
+<Button android:id="@+id/btnSaveRates" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="💾  Сохранить тарифы"/>
+</LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="По показаниям счётчика" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="20dp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/card_bg" android:orientation="vertical" android:layout_marginTop="8dp">
+<EditText android:id="@+id/etDayPrev" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="☀️ День — предыдущие показания" android:inputType="numberDecimal"/>
+<EditText android:id="@+id/etDayCurrent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="☀️ День — текущие показания" android:inputType="numberDecimal"/>
+<EditText android:id="@+id/etNightPrev" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="🌙 Ночь — предыдущие показания" android:inputType="numberDecimal"/>
+<EditText android:id="@+id/etNightCurrent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="🌙 Ночь — текущие показания" android:inputType="numberDecimal"/>
+<Button android:id="@+id/btnCalcMeter" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="⚡  РАССЧИТАТЬ СТОИМОСТЬ"/>
+</LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="По сумме" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="20dp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/card_bg" android:orientation="vertical" android:layout_marginTop="8dp">
+<EditText android:id="@+id/etMoneyDay" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="☀️ День — сумма, грн" android:inputType="numberDecimal"/>
+<EditText android:id="@+id/etMoneyNight" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="🌙 Ночь — сумма, грн" android:inputType="numberDecimal"/>
+<Button android:id="@+id/btnCalcMoney" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="РАССЧИТАТЬ КИЛОВАТТ⋅Ч"/>
+</LinearLayout>
+<TextView android:id="@+id/tvResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/card_bg" android:text="Результат появится здесь" android:textSize="17sp" android:textStyle="bold" android:layout_marginTop="20dp"/>
+<Button android:id="@+id/btnClear" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Очистить расчёты" android:layout_marginTop="8dp" android:layout_marginBottom="12dp"/>
+</LinearLayout></ScrollView>
